@@ -157,7 +157,7 @@ footer {
 }
 
 .team-member img {
-    width: 100%; /* Mantiene el tamaño original */
+    width: 80%; /* Mantiene el tamaño original */
     height: auto; /* Mantiene la relación de aspecto */
     border-radius: 15px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
@@ -258,7 +258,7 @@ video {
     margin: 10px 0; /* Espaciado superior e inferior */
 }
 .responsive-video {
-    max-width: 20%; /* Cambia el tamaño según sea necesario */
+    max-width: 15%; /* Cambia el tamaño según sea necesario */
     height: auto; /* Mantiene la proporción */
     display: block;
     margin: 0 auto; /* Centra el video */
