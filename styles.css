@@ -142,8 +142,8 @@ footer {
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     transition: transform 0.2s;
 }
 
@@ -167,7 +167,6 @@ footer {
 .team-member img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
     transform: scale(1.05); /* Ligeramente aumenta el tamaño */
-    filter: brightness(1.1); /* Aumenta el brillo ligeramente */
 }
 
 /* Estilos para la sección de contacto */
@@ -182,4 +181,85 @@ footer {
     height: auto; /* Mantiene la proporción */
     border-radius: 15px; /* Bordes redondeados */
     margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+video {
+    max-width: 80%; /* Reduce el tamaño máximo del video */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0; /* Ajusta el margen superior e inferior */
+}
+
+/* Estilo para las imágenes de las regiones */
+.region-img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    max-width: 300px; /* Aumenta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar la imagen */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efecto de transición suave */
+}
+
+.region-img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Estilo para la galería de regiones */
+.regions-gallery {
+    display: flex;
+    justify-content: space-around; /* Distribuye las imágenes uniformemente */
+    flex-wrap: wrap; /* Permite que las imágenes se reorganicen en filas si es necesario */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+/* Product and Child Image Styles */
+.product-images, .children-images {
+    display: flex; /* Display items in a flex container */
+    flex-wrap: wrap; /* Wrap items to the next line */
+    justify-content: center; /* Center items */
+    margin: 10px 0; /* Margin above and below */
+}
+
+.product-images img, .children-images img {
+    width: 250px; /* Fixed width for product and child images */
+    height: 150px; /* Fixed height for product and child images */
+    margin: 10px; /* Space around each image */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s; /* Transition effect */
+}
+
+.product-images img:hover, .children-images img:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-images img, .children-images img {
+        width: 150px; /* Smaller size for smaller screens */
+        height: 100px; /* Adjust height accordingly */
+    }
+}
+/* Estilo para el video */
+video {
+    max-width: 50%; /* Reduce el tamaño máximo del video al 80% del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para las últimas tres imágenes en el contenedor .galeria */
+.galeria img:nth-last-child(-n+3) {
+    max-width: 100%; /* Ajusta el tamaño al 80% del contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 10px 0; /* Espaciado superior e inferior */
+}
+.responsive-video {
+    max-width: 20%; /* Cambia el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra el video */
 }
